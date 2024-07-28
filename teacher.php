@@ -1,103 +1,106 @@
 <!DOCTYPE html>
-<html lang="th">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ข้อมูลนักเรียน</title>
+    <title>Edit Teacher</title>
     <link rel="stylesheet" href="teacher.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-
-    <div class="container">
-        <div class="box-1">
-            <div class="box-2">
-                <div class="text-1">
-                    <h1>ข้อมูลคุณครู</h1>
-                </div>
-                <div class="search-form">
-                    <div class="form-group">
-                        <label for="search-name">ชื่อ-นามสกุล</label>
-                        <input type="text" id="search-name" name="search-name">
-                    </div>
-                    <div class="form-group">
-                        <label for="search-level">กลุ่มวิชาที่สอน</label>
-                        <select id="search-level" name="search-level">
-                            <option value="">เลือกกลุ่มวิชา</option>
-                            <option value="1">คณิตศาสตร์</option>
-                            <option value="2">วิทยาศาสตร์</option>
-                            <option value="3">ภาษา</option>
-                            <option value="3">สังคมศาสตร์</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <button type="button">ค้นหา <i class="fa-solid fa-magnifying-glass"></i></button>
-                    </div>
-                </div>
-
-                <div class="btn-con">
-                    <button class="add-student-button" onclick="window.location.href='add-teacher.php'">+ เพิ่มคุณครู</button>
-                    <button class="out-student-button" onclick="window.location.href='home.php'">ออก</button>
-                </div>
-
-                <div class="group-form1">
-                    <div class="group-form2">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>รหัสประจำตัว</th>
-                                    <th>ชื่อ-นามสกุล</th>
-                                    <th>รูปถ่าย</th>
-                                    <th>เบอร์โทร</th>
-                                    <th>กลุ่มวิชาที่สอน</th>
-                                    <th>การจัดการ</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>S001</td>
-                                    <td>ดช.มานะ เรียนดี</td>
-                                    <td><img width="40px" src="https://plus.unsplash.com/premium_photo-1675130119373-61ada6685d63?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="รูปถ่าย"></td>
-                                    <td>081 123 4567</td>
-                                    <td>คณิตศาสตร์</td>
-                                    <td><a href="#"><i class="fa-solid fa-pen"></i></a> | <a href="#"><i class="fa-solid fa-trash"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>S002</td>
-                                    <td>ดญ.สวยงาม ศรีสง่า</td>
-                                    <td><img width="40px" src="https://plus.unsplash.com/premium_photo-1675130119373-61ada6685d63?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="รูปถ่าย"></td>
-                                    <td>081 253 4785</td>
-                                    <td>ภาษา</td>
-                                    <td><a href="#"><i class="fa-solid fa-pen"></i></a> | <a href="#"><i class="fa-solid fa-trash"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>S003</td>
-                                    <td>ดช.เลิศศักดิ์ สุขเกิน</td>
-                                    <td><img width="40px" src="https://plus.unsplash.com/premium_photo-1675130119373-61ada6685d63?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="รูปถ่าย"></td>
-                                    <td>086 425 0054</td>
-                                    <td>วิทยาศาสตร์</td>
-                                    <td><a href="#"><i class="fa-solid fa-pen"></i></a> | <a href="#"><i class="fa-solid fa-trash"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>S003</td>
-                                    <td>ดช.เลิศศักดิ์ สุขเกิน</td>
-                                    <td><img width="40px" src="https://plus.unsplash.com/premium_photo-1675130119373-61ada6685d63?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="รูปถ่าย"></td>
-                                    <td>086 425 0054</td>
-                                    <td>วิทยาศาสตร์</td>
-                                    <td><a href="#"><i class="fa-solid fa-pen"></i></a> | <a href="#"><i class="fa-solid fa-trash"></i></a></td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
+    <!--  nav(Navigation)คำสั่งนี้เป็นบ่งชี้ของส่วนเมนู  -->
+    <nav>
+        <div class="logo"> <!--ใช้สำหรับการแสดงโลโก้มุมซ้ายบนของเว็บไซต์-->
+            <a href="#">Datateacher</a>
         </div>
-
+        <!-- ul class เป็นตัวกำหนดคลาสเฉพาะใส่ที่อยู่ใน ulที่มีหลายรายการจะครอบคลุมไปจนถึงบรรทัดที่24-->
+        <ul class="menu"> 
+            <li><a href="#">ข้อมูลคุณครู</a></li>
+            <li><a href="#">ข้อมูลนักเรียน</a></li>
+            <li><a href="#">ข้อมูลรายวิชา</a></li>
+            <li><a href="#">ข้อมูลห้องเรียน</a></li>
+            <li><a href="#">ข้อมูลตาราสอง</a></li>
+            <li><a href="#">ข้อมูลกลุ่มวิชา</a></li>
+            <li><a href="#">ข้อมูลอาคารเรียน</a></li>
+        </ul>
+    </nav>
+    
+    <!--div class="container"> ใช้สำหรับจัดกลุ่มเนื้อหาทั้งหมดให้อยู่ภายใน container นี้ ซึ่งจะมีการจัดรูปแบบโดยใช้ CSS เป็นการจัดรูปแบบ-->
+    <div class="container">   
+        <form action="#" method="post"> <!-- ใช้สำหรับรับข้อมูลจากผู้ใช้ โดยมีการกำหนดค่า action กับ methodเพื่อส่งข้อมูลไปยังเชิฟเวอร์-->
+            <h1>ข้อมูลคุณครู</h1><br>
+            <fieldset> <!--ใช้สำหรับจัดกลุ่มข้อมูลในฟอร์ม-->
+                <legend>เพิ่ม/แก้ไขข้อมูลคุณครู</legend>
+                <table>
+                    <tr>
+                        <td align="right">
+                            <label for="id_teacher">รหัสประจำตัว</label>
+                        </td>
+                        <td>
+                            <input type="text" name="id_teacher" id="id_teacher" size="15">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="fullname">ชื่อ-นามสกุล</label>
+                        </td>
+                        <td>
+                            <input type="text" name="fullname" id="fullname" size="15">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="phone">เบอร์โทรศัพท์</label>
+                        </td>
+                        <td>
+                            <input type="text" name="phone" id="phone" size="15">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="subject_group">กลุ่มวิชาที่สอน</label>
+                        </td>
+                        <td>
+                            <input list="mylist" id="subject_group" name="subject_group">
+                            <datalist id="mylist">
+                                <option value="คณิตศาสตร์">
+                                <option value="วิทยาศาสตร์">
+                                <option value="ภาษา">
+                                <option value="สังคมศาสตร์">
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="photo">รูปถ่าย</label>
+                        </td>
+                        <td>
+                            <input type="file" name="photo" id="photo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="username">Username</label>
+                        </td>
+                        <td>
+                            <input type="text" name="username" id="username" size="15">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="password">Password</label>
+                        </td>
+                        <td>
+                            <input type="password" name="password" id="password" size="15">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <button type="submit">บันทึกข้อมูล</button>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
     </div>
-
 </body>
-
 </html>

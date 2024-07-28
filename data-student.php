@@ -38,7 +38,7 @@
                 </div>
 
                 <div class="btn-con">
-                    <button class="add-student-button" onclick="window.location.href='add-student.php'">+ เพิ่มคุณครู</button>
+                    <button class="add-student-button" onclick="window.location.href='add-student.php'">+ เพิ่มนักเรียน</button>
                     <button class="out-student-button" onclick="window.location.href='home.php'">ออก</button>
                 </div>
 

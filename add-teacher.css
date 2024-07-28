@@ -1,19 +1,57 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f4ea;
-    padding: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+
 }
+
 .form-container {
-    width: 400px;
+    max-width: 100vw;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    background-image: url('bg-img/stacked-steps-haikei.svg');
+    /* ใช้ URL ของภาพ SVG ที่ต้องการ */
+    background-size: cover;
+    /* ปรับขนาดภาพให้ครอบคลุมทั้งหน้าจอ */
+    background-position: center;
+    /* จัดภาพให้อยู่ตรงกลาง */
+    background-repeat: no-repeat;
+    /* ไม่ทำซ้ำภาพ */
 }
-h1 {
+
+.box1 {
+    border: 1px solid red;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2 {
+    /* border: 1px solid red; */
+    width: 500px;
+    padding: 20px;
+    box-shadow: 0px 5px 10px black;
+    background: #fcfcfc;
+    border-radius: 8px;
+}
+
+
+.text-teacher {
     text-align: center;
     font-size: 24px;
+    margin-bottom: 10px;
 }
 .form-group {
     margin-bottom: 15px;
@@ -24,21 +62,39 @@ h1 {
     margin-bottom: 5px;
 }
 .form-group input,
-.form-group select,
-.form-group button {
-    width: calc(100% - 20px);
+.form-group select {
+    width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 3px;
     box-sizing: border-box;
+    outline: none;
 }
-.form-group button {
-    background-color: #c1d0b5;
+
+
+.btn-con {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.btn-submit button{
+    padding: 10px 50px;
+    width: 200px;
+    background: rgb(53, 174, 255);
     border: none;
-    cursor: pointer;
-    padding: 10px;
-    text-align: center;
+    border-radius: 15px;
+    color: #fcfcfc;
+    font-size: 15px;
 }
-.form-group button:hover {
-    background-color: #b0c4a0;
+
+.btn-out button {
+    width: 200px;
+    padding: 10px 50px;
+    background: rgb(238, 57, 57);
+    border: none;
+    border-radius: 15px;
+    color: #fcfcfc;
+    font-size: 15px;
 }

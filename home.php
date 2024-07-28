@@ -16,7 +16,7 @@
             <ul class="menu-con">
                 <li><a href="teacher.php">ข้อมูลคุณครู</a></li>
                 <li><a href="data-student.php">ข้อมูลนักเรียน</a></li>
-                <li><a href="">ข้อมูลรายวิชา</a></li>
+                <li><a href="data-subject2.php">ข้อมูลรายวิชา</a></li>
                 <li><a href="data-classroom.php">ข้อมูลห้องเรียน</a></li>
                 <li><a href="Tutorial-Schedule.php">ข้อมูลตารางสอน</a></li>
                 <li><a href="data-subject.php">ข้อมูลกลุ่มวิชา</a></li>
