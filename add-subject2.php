@@ -13,24 +13,19 @@
     <div class="form-container">
         <div class="box1">
             <div class="box2">
-                <h1 class="text-teacher">ข้อมูลห้องเรียน</h1>
+                <h1 class="text-teacher">ข้อมูลรายวิชา</h1>
                 <hr>
                 <div>
                     <div class="form-group">
-                        <label for="student-id">หมายเลขห้อง</label>
+                        <label for="student-id">รหัสวิชา</label>
                         <input type="text" id="student-id" name="student-id">
                     </div>
                     <div class="form-group">
-                        <label for="name">อาคารเรียน</label>
-                        <select id="level" name="level">
-                            <option value="">เลือกอาคารเรียน</option>
-                            <option value="A">A</option>
-                            <option value="B">B</option>
-                            <option value="C">C</option>
-                        </select>
+                        <label for="name">ชื่อวิชา</label>
+                        <input type="text" id="name" name="name">
                     </div>
                     <div class="form-group">
-                    <label for="level">ชั้น</label>
+                    <label for="level">ระดับชั้น</label>
                         <select id="level" name="level">
                             <option value="">เลือกระดับชั้น</option>
                             <option value="1">ม.1</option>
@@ -39,7 +34,17 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="photo">รูปห้องเรียน</label>
+                        <label for="level">กลุ่มวิชา</label>
+                        <select id="level" name="level">
+                            <option value="">เลือกกลุ่มวิชา</option>
+                            <option value="คณิตศาสตร์">คณิตศาสตร์</option>
+                            <option value="วิทยาศาสตร์">วิทยาศาสตร์</option>
+                            <option value="ภาษา">ภาษา</option>
+                            <option value="สังคมศาสตร์">สังคมศาสตร์</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="photo">ปกหนังสือ</label>
                         <input type="file" id="photo" name="photo">
                     </div>
                     <div class="btn-con">
@@ -47,7 +52,7 @@
                             <button  type="submit">บันทึกข้อมูล</button>
                         </div>
                         <div class="btn-out">
-                            <button onclick="window.location.href='data-classroom.php'">ออก</button>
+                            <button onclick="window.location.href='teacher.php'">ออก</button>
                         </div>
                     </div>
                 </div>
