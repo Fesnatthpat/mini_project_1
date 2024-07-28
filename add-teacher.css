@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f4ea;
+    padding: 20px;
+}
+.form-container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+h1 {
+    text-align: center;
+    font-size: 24px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.form-group input,
+.form-group select,
+.form-group button {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.form-group button {
+    background-color: #c1d0b5;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+}
+.form-group button:hover {
+    background-color: #b0c4a0;
+}
